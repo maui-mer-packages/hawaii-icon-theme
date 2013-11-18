@@ -3,7 +3,7 @@ Summary:    Icon theme for Hawaii desktop environment
 Version:    0.2.0
 Release:    1
 License:    CC-BY-SA and GPLv2 and LGPLv2
-Source0:    http://sourceforge.net/projects/mauios/files/hawaii/hawaii-icon-themes/hawaii-icon-themes-%{version}.tar.gz
+Source0:    %{name}-%{version}.tar.xz
 Requires(post): /bin/touch
 Requires(post): %{_bindir}/gtk-update-icon-cache
 BuildRequires:  cmake
