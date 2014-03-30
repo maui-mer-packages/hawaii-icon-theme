@@ -1,0 +1,23 @@
+Name       : hawaii-icon-theme
+Version    : 0.2.0
+Release    : 1
+Group      : System/X11/Icons
+License    : CC-BY-SA and GPLv2 and LGPLv2
+URL        : https://github.com/mauios/hawaii-icon-themes.git
+Summary    : Icon themes for Hawaii desktop environment
+Description: This is an icon-theme for Hawaii desktop environment.
+Sources    : 
+    - hawaii-icon-theme-%{version}.tar.xz
+SetupOptions: -q -n %{name}-%{version}/upstream
+BuildArch  : noarch
+
+Configure  : cmake 
+ConfigOptions: 
+    - -DCMAKE_BUILD_TYPE=RelWithDebInfo 
+
+PkgBR:
+    - cmake
+
+Files:  
+    - "%{_datadir}/icons/elegant/"
+    - "%{_datadir}/icons/hawaii/"
